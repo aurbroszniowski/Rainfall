@@ -8,7 +8,32 @@
   <packaging>pom</packaging>
   <groupId>io.rainfall</groupId>
   <artifactId>rainfall</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
+
+  <description>Rainfall is an extensible java framework to implement custom DSL based stress and performance tests
+  </description>
+  <url>https://github.com/aurbroszniowski/Rainfall</url>
+  <licenses>
+    <license>LICENSE</license>
+  </licenses>
+  <scm>
+    <connection>scm:git:https://github.com/aurbroszniowski/Rainfall</connection>
+    <developerConnection>scm:git:https://github.com/aurbroszniowski/Rainfall</developerConnection>
+    <url>https://github.com/aurbroszniowski/Rainfall</url>
+  </scm>
+  <developers>
+    <developer>
+      <id>aurelien</id>
+      <name>Aurelien Broszniowski</name>
+      <organization>JSoft</organization>
+      <organizationUrl>http://www.jsoft.biz</organizationUrl>
+      <roles>
+        <role>lead</role>
+        <role>developer</role>
+      </roles>
+      <timezone>1</timezone>
+    </developer>
+  </developers>
 
   <modules>
     <module>rainfall-core</module>
