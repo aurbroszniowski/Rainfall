@@ -14,7 +14,12 @@
   </description>
   <url>https://github.com/aurbroszniowski/Rainfall</url>
   <licenses>
-    <license>LICENSE</license>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
   </licenses>
   <scm>
     <connection>scm:git:https://github.com/aurbroszniowski/Rainfall</connection>
