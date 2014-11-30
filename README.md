@@ -8,3 +8,5 @@ See modules :
  - Rainfall-web
  - Rainfall-ehcache
  - Rainfall-jcache
+
+[![Build Status](https://rainfall.ci.cloudbees.com/buildStatus/icon?job=Rainfall parent)](https://rainfall.ci.cloudbees.com/job/Rainfall%20parent/)
