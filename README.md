@@ -9,4 +9,5 @@ See modules :
  - Rainfall-ehcache
  - Rainfall-jcache
 
+!(https://www.cloudbees.com/sites/default/files/styles/large/public/Button-Built-on-CB-1.png?itok=3Tnkun-C)
 [![Build Status](https://rainfall.ci.cloudbees.com/buildStatus/icon?job=Rainfall parent)](https://rainfall.ci.cloudbees.com/job/Rainfall%20parent/)
