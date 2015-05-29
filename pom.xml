@@ -8,7 +8,7 @@
   <packaging>pom</packaging>
   <groupId>io.rainfall</groupId>
   <artifactId>rainfall</artifactId>
-  <version>1.0.4-SNAPSHOT</version>
+  <version>1.0.4</version>
 
   <description>Rainfall is an extensible java framework to implement custom DSL based stress and performance tests
   </description>
