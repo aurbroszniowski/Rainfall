@@ -45,7 +45,7 @@
     <module>rainfall-ehcache</module>
     <module>rainfall-jcache</module>
     <module>rainfall-web</module>
-    <module>Coordinated-omission</module>
+    <module>Rainfall-tutorial</module>
   </modules>
 
   <distributionManagement>
