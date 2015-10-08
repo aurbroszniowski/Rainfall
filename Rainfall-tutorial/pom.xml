@@ -12,7 +12,7 @@
   <artifactId>Rainfall-tutorial</artifactId>
 
   <properties>
-    <rainfall.core.version>1.1.0</rainfall.core.version>
+    <rainfall.core.version>1.1.1-SNAPSHOT</rainfall.core.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
