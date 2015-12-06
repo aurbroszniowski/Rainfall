@@ -4,10 +4,10 @@ package io.rainfall;
 import io.rainfall.configuration.ConcurrencyConfig;
 import io.rainfall.configuration.ReportingConfig;
 import io.rainfall.statistics.StatisticsHolder;
-import io.rainfall.utils.SystemTest;
 import org.HdrHistogram.Histogram;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -25,7 +25,7 @@ public class CoordinatedOmissionTest {
   @Test
   public void testHdrHistogram() {
     Histogram histogram = new Histogram(110000L, 3);
-    for (int i = 0; i < 100000 ; i++) {      // record 1 ms
+    for (int i = 0; i < 100000; i++) {      // record 1 ms
       histogram.recordValue(1L);
     }
     histogram.recordValue(100000L);  // record 100 sec
@@ -66,6 +66,11 @@ public class CoordinatedOmissionTest {
       dummyServer.dummyCall();
       long end = getTimeInNs();
       statisticsHolder.record("Test", (end - start), DummyResult.OK);
+    }
+
+    @Override
+    public List<String> getDescription() {
+      return Arrays.asList("dummy operation");
     }
   }
 
