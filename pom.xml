@@ -45,10 +45,10 @@
   </prerequisites>
 
   <modules>
-    <module>rainfall-core</module>
-    <module>rainfall-ehcache</module>
-    <module>rainfall-jcache</module>
-    <module>rainfall-web</module>
+    <module>Rainfall-core</module>
+    <module>Rainfall-ehcache</module>
+    <module>Rainfall-jcache</module>
+    <module>Rainfall-web</module>
     <module>Rainfall-tutorial</module>
   </modules>
 
