@@ -56,7 +56,7 @@ public class CoordinatedOmissionTest {
     dummyServer.interrupt();
   }
 
-  public static class DummyOperation extends Operation {
+  public static class DummyOperation implements Operation {
     private DummyServer dummyServer;
 
     public DummyOperation(final DummyServer dummyServer) {
@@ -65,9 +65,9 @@ public class CoordinatedOmissionTest {
 
     @Override
     public void exec(final StatisticsHolder statisticsHolder, final Map<Class<? extends Configuration>, Configuration> configurations, final List<AssertionEvaluator> assertions) throws TestException {
-      long start = getTimeInNs();
+      long start = statisticsHolder.getTimeInNs();
       dummyServer.dummyCall();
-      long end = getTimeInNs();
+      long end = statisticsHolder.getTimeInNs();
       statisticsHolder.record("Test", (end - start), DummyResult.OK);
     }
 
