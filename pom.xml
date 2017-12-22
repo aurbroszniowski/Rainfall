@@ -50,6 +50,7 @@
     <module>Rainfall-jcache</module>
     <module>Rainfall-web</module>
     <module>Rainfall-tutorial</module>
+    <module>Rainfall-cassandra</module>
   </modules>
 
   <distributionManagement>
