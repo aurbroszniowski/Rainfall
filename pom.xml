@@ -51,6 +51,7 @@
     <module>Rainfall-web</module>
     <module>Rainfall-tutorial</module>
     <module>Rainfall-cassandra</module>
+    <module>Rainfall-redis</module>
   </modules>
 
   <distributionManagement>
