@@ -1,0 +1,14 @@
+.idea
+*.iml
+*.log
+*.ctxt
+.mtj.tmp/
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.csv
+hs_err_pid*
+target
+.DS_Store
