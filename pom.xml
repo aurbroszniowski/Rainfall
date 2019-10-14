@@ -24,7 +24,7 @@
   <packaging>pom</packaging>
   <groupId>io.rainfall</groupId>
   <artifactId>rainfall</artifactId>
-  <version>1.4.16-SNAPSHOT</version>
+  <version>1.4.17-SNAPSHOT</version>
 
   <description>Rainfall is an extensible java framework to implement custom DSL based stress and performance tests
   </description>
