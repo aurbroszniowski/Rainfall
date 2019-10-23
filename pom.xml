@@ -24,7 +24,7 @@
   <packaging>pom</packaging>
   <groupId>io.rainfall</groupId>
   <artifactId>rainfall</artifactId>
-  <version>1.5.0-SNAPSHOT</version>
+  <version>1.5.1-SNAPSHOT</version>
 
   <description>Rainfall is an extensible java framework to implement custom DSL based stress and performance tests
   </description>
@@ -68,6 +68,7 @@
     <module>Rainfall-tutorial</module>
     <module>Rainfall-cassandra</module>
     <module>Rainfall-redis</module>
+    <module>Rainfall-store</module>
   </modules>
 
   <distributionManagement>
