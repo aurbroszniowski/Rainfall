@@ -20,7 +20,9 @@ import io.rainfall.configuration.ConcurrencyConfig;
 import io.rainfall.generator.ByteArrayGenerator;
 import io.rainfall.statistics.StatisticsHolder;
 import io.rainfall.store.client.StoreClientService;
+import io.rainfall.utils.SystemTest;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import java.util.Arrays;
 import java.util.List;
@@ -41,6 +43,7 @@ import static java.util.concurrent.TimeUnit.MINUTES;
  * @author Aurelien Broszniowski
  */
 
+@Category(SystemTest.class)
 public class RainfallStoreTest {
 
   @Test
