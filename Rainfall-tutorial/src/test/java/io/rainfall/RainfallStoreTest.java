@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014-2019 Aurélien Broszniowski
+ * Copyright (c) 2014-2020 Aurélien Broszniowski
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,10 +29,12 @@ import java.util.Random;
 
 import static io.rainfall.configuration.ReportingConfig.report;
 import static io.rainfall.configuration.ReportingConfig.text;
+import static io.rainfall.execution.Executions.during;
 import static io.rainfall.execution.Executions.times;
 import static io.rainfall.store.client.StoreClientServiceFactory.defaultService;
 import static io.rainfall.store.core.TestRun.Status.COMPLETE;
 import static io.rainfall.store.core.TestRun.Status.FAILED;
+import static io.rainfall.unit.TimeDivision.seconds;
 import static java.util.concurrent.TimeUnit.MINUTES;
 
 /**
@@ -43,10 +45,6 @@ public class RainfallStoreTest {
 
   @Test
   public void testRecord() throws SyntaxException {
-
-
-    ConcurrencyConfig concurrency = ConcurrencyConfig.concurrencyConfig()
-        .threads(4).timeout(60, MINUTES);
 
 
     ObjectGenerator<byte[]> valueGenerator = ByteArrayGenerator.fixedLengthByteArray(1000);
@@ -63,20 +61,24 @@ public class RainfallStoreTest {
               .exec(new Operation() {
                       @Override
                       public void exec(StatisticsHolder statisticsHolder, Map<Class<? extends Configuration>, Configuration> configurations, List<AssertionEvaluator> assertions) throws TestException {
-                        statisticsHolder.record("name1", rnd.nextInt(1000000), TestResult.ONE);
-                        statisticsHolder.record("name2", rnd.nextInt(1000000), TestResult.TWO);
+                        long start = statisticsHolder.getTimeInNs();
 
+                        long end = statisticsHolder.getTimeInNs();
+
+                        statisticsHolder.record("operation", (end - start), TestResult.ONE);
                       }
 
                       @Override
                       public List<String> getDescription() {
-                        return Arrays.asList("example");
+                        return Arrays.asList("Operation execution");
                       }
                     }
               )
-              )
+      )
+          .warmup(during(30, seconds))
           .executed(times(10000))
-          .config(concurrency, report(TestResult.class)
+          .config(ConcurrencyConfig.concurrencyConfig()
+              .threads(4).timeout(60, MINUTES), report(TestResult.class)
               .log(text())
 
           )
