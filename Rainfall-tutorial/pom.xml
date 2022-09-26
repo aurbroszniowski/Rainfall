@@ -28,7 +28,7 @@
   <artifactId>Rainfall-tutorial</artifactId>
 
   <properties>
-    <rainfall.core.version>1.6.1</rainfall.core.version>
+    <rainfall.core.version>1.6.3-SNAPSHOT</rainfall.core.version>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
