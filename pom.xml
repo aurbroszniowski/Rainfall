@@ -24,7 +24,7 @@
   <packaging>pom</packaging>
   <groupId>io.rainfall</groupId>
   <artifactId>rainfall</artifactId>
-  <version>1.6.3</version>
+  <version>1.6.4-SNAPSHOT</version>
 
   <description>Rainfall is an extensible java framework to implement custom DSL based stress and performance tests
   </description>
@@ -150,7 +150,7 @@
           <plugin>
             <groupId>org.sonatype.plugins</groupId>
             <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.3</version>
+            <version>1.6.4-SNAPSHOT</version>
             <extensions>true</extensions>
             <configuration>
               <serverId>ossrh</serverId>
