@@ -67,7 +67,8 @@
     <module>Rainfall-web</module>
     <module>Rainfall-cassandra</module>
     <module>Rainfall-redis</module>
-    <module>Rainfall-store</module>
+<!--    <module>Rainfall-store</module>-->
+    <module>Rainfall-reports</module>
 <!--    <module>Rainfall-tutorial</module>-->
   </modules>
 
