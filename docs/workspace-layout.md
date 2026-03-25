@@ -5,6 +5,13 @@ This repository is the public parent/workspace repository for Rainfall.
 It is useful as a lightweight entry point for side-by-side development, but the
 runtime modules live in their own repositories.
 
+Which repo should I clone?
+--------------------------
+
+- Clone `Rainfall` first if you want the full public maintainer workspace.
+- Clone `Rainfall-core` directly if you only want to work on the framework
+  core.
+
 Recommended local layout
 ------------------------
 
@@ -32,6 +39,10 @@ sh scripts/bootstrap-workspace.sh
 
 The script clones the public sibling repositories next to `Rainfall` if they
 are not already present.
+
+After bootstrap, day-to-day framework development happens in `Rainfall-core`.
+The outer `Rainfall` repository remains the lightweight workspace shell and
+bootstrap entry point.
 
 Notes
 -----

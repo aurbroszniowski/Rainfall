@@ -23,6 +23,15 @@ Workspace bootstrap
 This repository can be used as a lightweight parent/workspace checkout for
 side-by-side development of the public Rainfall repositories.
 
+New developer setup:
+
+1. Clone `Rainfall` if you want the full maintainer workspace.
+2. Run `sh scripts/bootstrap-workspace.sh`.
+3. Open and work in `Rainfall-core` for framework development.
+
+If you only want to work on the framework core, you can clone
+`Rainfall-core` directly and skip this workspace repo.
+
 See [docs/workspace-layout.md](docs/workspace-layout.md) for the recommended
 layout, then run:
 
