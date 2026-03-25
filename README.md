@@ -17,10 +17,22 @@ See modules :
 
 [Rainfall-redis](https://github.com/aurbroszniowski/Rainfall-redis) for Redis
 
+Workspace bootstrap
+-------------------
+
+This repository can be used as a lightweight parent/workspace checkout for
+side-by-side development of the public Rainfall repositories.
+
+See [docs/workspace-layout.md](docs/workspace-layout.md) for the recommended
+layout, then run:
+
+```bash
+sh scripts/bootstrap-workspace.sh
+```
+
 Thanks to the following companies for their support to FOSS:
 ------------------------------------------------------------
 
 [Sonatype for Nexus](http://www.sonatype.org/)
 
 and of course [Github](https://github.com/) for hosting this project.
-
